@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
 
   const fetchGridData = async () => {
     try {
-      const response = await fetch(`/api/exportGrid?size=${gridSize}`);
+      const response = await fetch(`/api/grid?size=${gridSize}`);
       if (response.ok) {
         const data = await response.json();
         console.log('Grid data:', data.grid);
